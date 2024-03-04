@@ -1,9 +1,7 @@
 
 = New file : data/hello.typ
-= HELLO FILE
 hello !
 = New file : data/ok.typ
-= OK FILE
 ok
 = New file : data/suivi.typ
 = Fiche de suivi de projet 
