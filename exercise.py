@@ -1,11 +1,32 @@
 import sys
 
 class Exercice:
-    def __init__(self, number, exercise, solution, difficulty):
-        self.number = number
-        self.exercise = exercise
-        self.solution = solution
+    def __init__(self, id, title=None, duration=None, difficulty=None, solution=None, figures=None, points=None, bonus=None, author=None, references=None, language=None, material=None):
+        self.id = id
+        self.title = title
+        self.duration = duration
         self.difficulty = difficulty
+        self.solution = solution # booléen indiquant s'il y a une solution à la fin du fichier .typ
+        self.figures = figures
+        self.points = points
+        self.bonus = bonus # booléen indiquant si l'exercice est facultatif ou non
+        self.author = author
+        self.references = references
+        self.language = language
+        self.material = material
+
+        # Liste de  tous les champs visibles sur la fiche créée
+        self.visible = [self.title, self.duration, self.difficulty, self.figures, self.points, self.bonus]
+
+        # Si le champ visible est vide, on l'enlève de la liste
+        self.visible = [x for x in self.visible if x]
+
+# LaTeX to Typst
+    def latex_to_typst(latex_file):
+        return
+    
+    def get_id(self):
+        return self.id
 
     def display_exercice(self):
         print("Exercice" +{self.number}+":"+ {self.exercise})
@@ -43,4 +64,3 @@ class Exercice:
             exercises_list.append(cls(number, exercise, solution, difficulty))
 
         return exercises_list
-
