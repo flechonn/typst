@@ -1,0 +1,18 @@
+\begin{meta}
+\meta ID: 2  \\
+\meta Titre: Intégration par parties \\
+\meta Auteur: Dr. Johnson \\
+\meta Durée: 15 minutes \\
+\meta Difficulté: Difficile \\
+\meta Solution: oui \\
+\meta Nombre de points: 7 \\
+\meta Langue: Anglais \\
+\end{meta}
+
+\begin{contenu}
+Utilisez l'intégration par parties pour évaluer ∫xcos⁡(x) dx∫xcos(x)dx.
+\end{contenu}
+
+\begin{solution}
+En utilisant l'intégration par parties, on trouve ∫xcos⁡(x) dx=xsin⁡(x)+cos⁡(x)+C∫xcos(x)dx=xsin(x)+cos(x)+C, où CC est une constante d'intégration.
+\end{solution}

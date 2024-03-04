@@ -1,17 +1,17 @@
 import sys
-from exercice import Exercice
+from exercise import Exercice
 
-def lire_fichier(nom_fichier):
+def lire_fichier(filename):
     try:
-        with open(nom_fichier, 'r') as fichier:
-            contenu = fichier.read()
-            print(f"Contenu du fichier {nom_fichier} :\n{contenu}")
+        with open(filename, 'r') as fichier:
+            content = fichier.read()
+            print(f"File contents {filename} :\n{content}")
     except FileNotFoundError:
-        print(f"Le fichier {nom_fichier} n'existe pas.")
+        print(f"File {filename} does not exist.")
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 main.py fichier1 fichier2 ...")
+        print("Use: python3 main.py file1 file2 ...")
         sys.exit(1)
     
     output = open("output_file.typ", "w")
@@ -28,7 +28,7 @@ def main():
         content = f.read()
         output.write(content)
         
-    print("pour avoir la sortie en pdf: typst compile output_file.typ")
+    print("to have the output in pdf: typst compile output_file.typ")
     
     
     

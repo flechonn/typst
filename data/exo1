@@ -1,0 +1,17 @@
+\begin{meta}
+\meta ID: 1 \\
+\meta Titre: Calcul de dérivée \\
+\meta Auteur: Professeur Smith  \\
+\meta Difficulté: Moyenne \\
+\meta Solution: oui \\
+\meta Nombre de points: 5 \\
+\meta Langue: Français \\
+\end{meta}
+
+\begin{contenu}
+Calculez la dérivée de la fonction f(x)=3x2−2x+5f(x)=3x2−2x+5.
+\end{contenu}
+
+\begin{solution}
+La dérivée de la fonction f(x)f(x) est f′(x)=6x−2f′(x)=6x−2.
+\end{solution}

@@ -1,0 +1,18 @@
+\begin{meta}
+\meta ID: 4 \\
+\meta Auteur: Dr. Chen \\
+\meta Durée: 10 minutes \\
+\meta Difficulté: Moyenne \\
+\meta Solution: oui \\
+\meta Nombre de points: 6 \\
+\meta Titre: Calcul de limites \\
+\meta Langue: Anglais \\
+\end{meta}
+
+\begin{contenu}
+Calculez lim⁡x→0sin⁡(x)xlimx→0​xsin(x)​.
+\end{contenu}
+
+\begin{solution}
+La limite est égale à 11.
+\end{solution}
