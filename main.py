@@ -1,8 +1,6 @@
 import sys
 from exercice import Exercice
 
-#typst compile output_file.typ
-
 def lire_fichier(nom_fichier):
     try:
         with open(nom_fichier, 'r') as fichier:
@@ -13,20 +11,25 @@ def lire_fichier(nom_fichier):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 composition.py fichier1 fichier2 ...")
+        print("Usage: python3 main.py fichier1 fichier2 ...")
         sys.exit(1)
-    args=["typ/doc1.typ", "typ/doc2.typ"]
     
-    listexo = [] 
-    for nom_fichier in args:
-        # lire_fichier(nom_fichier)
-        exercises = Exercice.load_exercises_from_file(nom_fichier)  
-        listexo.extend(exercises)  
+    output = open("output_file.typ", "w")
 
-    # Display the loaded exercises
-    for exercise in enumerate(listexo, start=1):
-        Exercice.display_exercice(exercise)
-        print("ha")
+        
+    args= sys.argv
+    
+    
+    #fusion de fichier 
+    for file in args[1:]:
+        print(file)
+        f = open(file, "r")
+        output.write("\n= New file : " + file + "\n")
+        content = f.read()
+        output.write(content)
+        
+    print("pour avoir la sortie en pdf: typst compile output_file.typ")
+    
     
     
 if __name__ == "__main__":
